@@ -1,0 +1,10 @@
+#subjects {
+    border: 2px dashed red;
+    background-color: burlywood;
+    font-size: 110%;
+}
+
+body {
+    color: blueviolet;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

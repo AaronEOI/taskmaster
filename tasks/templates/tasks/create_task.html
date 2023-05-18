@@ -1,0 +1,19 @@
+{% extends "tasks/base.html" %}
+
+{% block content %}
+
+<form action="/search/" method="POST">
+    {% csrf_token %}
+
+    <table class="table">
+    {{ form.as_table }}
+    <tr>
+        <td></td>
+        <td>
+            <button type="submit" value="ok">Dar de alta</button>
+        </td>
+    </tr>
+    </table>
+</form>
+
+{% endblock content %}

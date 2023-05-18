@@ -1,0 +1,112 @@
+/** {
+    background-color: silver;
+}
+
+p {
+    font-family: "CMU Bright", Arial, Verdana, sans-serif;
+    font-size: 115%;
+    font-style: italic;
+     font-variant: small-caps; 
+    font-weight: 900;
+    line-height: 140%;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo,
+.subtitulo {
+    color: green;
+    text-align: center;
+}
+
+th {
+    color: silver;
+    background-color: black;
+}
+
+td {
+    color: navy;
+}*/
+
+#trademark {
+    text-align: right;
+    border-top: 2px solid black;
+    font-weight: bolder;
+}
+
+/*[disabled] {
+    font-size: 125%;
+    font-style: italic;
+}
+
+[href*="github"] {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+section.news>p {
+    transform: rotate(4deg);
+}*/
+
+.urgente {
+    font-weight: bolder;
+    color: rgb(255, 32, 32);
+}
+
+.no-urgente {
+    font-style: italic;
+    color: rgb(32, 188, 32);
+}
+
+/*li:first-child {
+    font-weight: 900;
+    font-size: 120%;
+    color: pink;
+}
+
+li:last-child {
+    font-weight: 500;
+    font-size: 140%;
+    color: blue;
+}
+
+a:hover {
+    background-color: red;
+    border: 2px solid violet;
+    font-weight: bolder;
+    cursor: crosshair;
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: blue;
+    border: 2px solid violet;
+    font-weight: bolder;
+}
+
+.fuera {
+    width: 100%;
+    background-color: cyan;
+}
+
+.dentro {
+    outline: solid blue;
+    background-color: pink;
+    padding: 5px;
+    border: 10px solid green;
+    margin: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: crosshair;
+}
+
+fieldset {
+    padding: 25px;
+    border: 1px solid green;
+    background-color: beige;
+}*/
