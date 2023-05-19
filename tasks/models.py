@@ -9,12 +9,6 @@ PRIORITIES = [
 ]
 
 
-def fecha_en_futuro(value):
-    if value:
-        if value < timezone.now().date():
-            raise ValidationError("La fecha de entrega debe ser en el futuro")
-
-
 class Subject(models.Model):
     class Meta:
         verbose_name = "Asignatura"
@@ -56,9 +50,6 @@ class Task(models.Model):
         null=True,
         blank=True,
         default=None,
-        validators=[
-            fecha_en_futuro,
-        ],
     )
     urgent = models.BooleanField(default=False)
     priority = models.CharField(
@@ -72,3 +63,9 @@ class Task(models.Model):
 
     def __str__(self):
         return f"Tarea #{self.pk}: {self.title}"
+
+
+def fecha_en_futuro(value):
+    if value:
+        if value < timezone.now().date():
+            raise ValidationError("La fecha de entrega debe ser en el futuro")

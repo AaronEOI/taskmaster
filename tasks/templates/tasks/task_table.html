@@ -11,7 +11,12 @@
     <tbody>
     {% for task in tasks %}
         <tr>
-            <th>{{ task.id }}</th>
+            <td>
+                <p>{% url "edit_task" pk=task.pk %}</p>
+                <a href="{% url "edit_task" pk=task.pk %}" role="botton" class="button is-primary">
+                {{ task.id }}
+                </a>
+            </td>
             <td>
                 {% if forloop.first %}
                 <b> {{ task.title|capfirst|add:" ❤"  }} </b>

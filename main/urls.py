@@ -23,6 +23,7 @@ urlpatterns = [
     path("lab/", views.lab_view),
     path("tareas/", views.list_tasks),
     path("tareas/alta/", views.create_task),
+    path("tareas/editar/<int:pk>/", views.edit_task, name="edit_task"),
     path("tareas/calendar/<int:year>/", views.list_tasks_per_year),
     # path("tareas/h/", views.list_high_priority),
     # path("tareas/n/", views.list_normal_priority),
